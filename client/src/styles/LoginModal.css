@@ -1,0 +1,109 @@
+
+
+.login-modal-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .login-modal-logo {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+    font-weight: bold;
+  }
+  
+  .login-modal-input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+  }
+  
+  .login-modal-button {
+    background-color: #673AB7;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1em;
+    cursor: pointer;
+  }
+  
+  .login-modal-button:hover {
+    background-color: #8a008a;
+  }
+  
+  .login-modal-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .login-modal-link-button {
+    background: none;
+    border: none;
+    color: #555;
+    cursor: pointer;
+    font-size: 0.9em;
+  }
+  
+  .login-modal-link-button:hover {
+    text-decoration: underline;
+  }
+  
+  .login-modal-link-separator {
+    color: #ccc;
+  }
+  
+  .login-modal-divider {
+    border-top: 1px solid #eee;
+    margin: 20px 0;
+  }
+  
+  .login-modal-social-login {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .login-modal-social-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .login-modal-social-icon {
+    margin-right: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  
+  .login-modal-social-button.naver {
+    background-color: #1EC800;
+  }
+  
+  .login-modal-social-button.kakao {
+    background-color: #FEE500;
+    color: black;
+  }
+  
+.kakao_button {
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+
+.kakao_image {
+  margin-Right: 8px;
+  width: 18rem; 
+  vertical-Align: middle;
+}
