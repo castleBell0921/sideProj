@@ -3,7 +3,7 @@ import Topbar from '../common/Topbar';
 import Header from '../common/Header';
 import SearchBar from '../common/SearchBar';
 import RecentViewed from '../common/RecentViewed'; 
-import '../../styles/home.css'; 
+import '../../styles/Home.css'; 
 
 // 임시 상품 아이템 컴포넌트 더미
 const DummyProductItem = () => {
