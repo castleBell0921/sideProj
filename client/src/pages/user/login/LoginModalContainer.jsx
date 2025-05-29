@@ -4,10 +4,13 @@ import LoginModalPresenter from './LoginModalPresenter';
 import Header from '../../common/Header';
 
 const LoginModalContainer = ({
-    isOpen,
-    onRequestClose,
-    onLoginSuccess 
-}) => {
+                                 isOpen,
+                                 onRequestClose,
+                                 onLoginSuccess ,
+                                 isLoggedIn,
+                                 checkLoginStatus
+
+                             }) => {
 
     const navigate = useNavigate();
     const [formData, setFormData] = useState({
@@ -31,7 +34,7 @@ const LoginModalContainer = ({
                 body: JSON.stringify(formData),
                 credentials: 'include',
             });
-        
+
             const responseData = await response.json(); // 응답 본문을 한 번만 읽음
             console.log(responseData);
             if (response.ok && responseData.success) {
@@ -65,6 +68,7 @@ const LoginModalContainer = ({
                 onSignUp={handleSignUp}
                 onInputChange={handleInputChange}
                 onSubmit={handleSubmit}
+                checkLoginStatus={checkLoginStatus}
             />
         </div>
     );

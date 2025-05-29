@@ -7,4 +7,4 @@ router.post('/sendAuthNumber', authController.sendAuthNumber);
 // 인증번호 확인
 router.post('/verifyAuthNumber', authController.verifyAuthNumber);
 
-module.exports = router;
+module.exports = router;ㅁ
