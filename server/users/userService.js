@@ -9,8 +9,8 @@ const userService = async (id, password, email, name, nickname, phone, socialId)
     console.log('in service!');
     // 회원가입 정보 저장
     const [result] = await connection.execute(
-      'INSERT INTO users (USER_NO, ID, PWD, PHONE, EMAIL, NICKNAME, STATE, TRUST, REGION, BEDGE, CREATE_DATE, IS_ADMIN, NAME,SOCIAL_ID) VALUES (NULL, ?, ?, ?, ?, ?, ?, ?, ?, ?, DEFAULT, DEFAULT, ?, ?)',
-      [id, hash,  phone, email, nickname, 'N', 0, 'defaultRegion', 'defaultBadge', name, socialId]
+        'INSERT INTO users (USER_NO, ID, PWD, PHONE, EMAIL, NICKNAME, STATE, TRUST, REGION, BEDGE, CREATE_DATE, IS_ADMIN, NAME,SOCIAL_ID) VALUES (NULL, ?, ?, ?, ?, ?, ?, ?, ?, ?, DEFAULT, DEFAULT, ?, ?)',
+        [id, hash,  phone, email, nickname, 'N', 0, 'defaultRegion', 'defaultBadge', name, socialId]
     );
 
     // 성공적으로 추가된 사용자 정보 반환
@@ -26,8 +26,8 @@ const checkIdAvailability = async(id) => {
   const connection = await pool.getConnection();
   try {
     const [rows] = await connection.execute(
-      'select count(*) as count from users where id = ?',
-      [id]
+        'select count(*) as count from users where id = ?',
+        [id]
     );
     return rows[0].count > 0;
   } catch(error) {
@@ -41,10 +41,10 @@ const loginService = async(id, pwd) => {
   const connection = await pool.getConnection();
   try {
     const [rows] = await connection.execute(
-      'select *  from users where id = ?',
-      [id]
+        'select *  from users where id = ?',
+        [id]
     );
-    
+
     if(rows.length == 0) {
       return{  success:false, message: '존재하지 않는 아이디입니다.'};
     }
