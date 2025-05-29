@@ -99,13 +99,13 @@
 
 .showCheck {
     display: none; /* 기본적으로 숨김 */
-  }
-  
-  .showCheck.visible {
-    display: inline-block; /* 또는 원하는 display 속성 */
-  }
+}
 
-  .authButton {
+.showCheck.visible {
+    display: inline-block; /* 또는 원하는 display 속성 */
+}
+
+.authButton {
     padding: 10px 12px; /* 약간 패딩 조정 */
     background-color: #eee;
     color: #333;
@@ -114,8 +114,8 @@
     font-size: 14px; /* 폰트 크기 조정 */
     cursor: pointer;
     transition: background-color 0.3s ease;
-  }
-  
-  .authButton:hover {
+}
+
+.authButton:hover {
     background-color: #ddd;
-  }
+}
