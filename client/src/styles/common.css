@@ -85,8 +85,8 @@
   color: #555;
   cursor: pointer;
   font-weight: 500;
-  display: inline-flex; 
-  align-items: center; 
+  display: inline-flex;
+  align-items: center;
   align-items: center;
   gap: 8px;
 }
@@ -97,10 +97,10 @@
 
 .searchbar-button-dot {
   display: inline-block;
-  width: 37px;  
-  height: 37px; 
-  background-color: #7851A9; 
-  border-radius: 50%; 
+  width: 37px;
+  height: 37px;
+  background-color: #7851A9;
+  border-radius: 50%;
 }
 
 .popular-keywords {
@@ -123,7 +123,7 @@
 
 /* FilterSidebar */
 .filter-sidebar-container {
-  width: 310px; 
+  width: 310px;
   padding: 25px 20px; /* 상하 패딩 늘림 */
   background-color: #fff; /* 배경색 흰색으로 */
 }
@@ -166,16 +166,16 @@
 .filter-checkbox-label { /* 거래 가능만 보기*/
   display: flex;
   align-items: center;
-  margin-bottom: 8px; 
+  margin-bottom: 8px;
   color: #333;
   cursor: pointer;
 }
 
 .filter-checkbox { /* 거래 가능만 보기*/
-  width: 18px; 
+  width: 18px;
   height: 18px;
   margin-right: 8px;
-  accent-color: #8A2BE2; 
+  accent-color: #8A2BE2;
 }
 
 .filter-list {
@@ -187,7 +187,7 @@
 .filter-list-item {
   display: flex; /* 라디오 버튼과 레이블을 한 줄에 정렬 */
   align-items: center;
-  margin-bottom: 12px; 
+  margin-bottom: 12px;
 }
 .filter-list-item:last-child {
   margin-bottom: 0;
@@ -209,10 +209,10 @@
 .filter-more-button {
   background: none;
   border: none;
-  color: #6f42c1; 
+  color: #6f42c1;
   cursor: pointer;
-  padding: 5px 0; 
-  margin-top: 5px; 
+  padding: 5px 0;
+  margin-top: 5px;
 }
 .filter-more-button:hover {
   text-decoration: underline;
@@ -223,11 +223,11 @@
   display: flex;
   align-items: center;
   gap: 8px; /* 요소 간 간격 */
-  margin-top: 15px; 
+  margin-top: 15px;
 }
 
 .price-input {
-  width: 70px; 
+  width: 70px;
   padding: 8px 10px;
   border: 1px solid #ddd;
   border-radius: 4px;
@@ -244,7 +244,7 @@
 
 .price-apply-button {
   padding: 8px 12px;
-  background-color: #6f42c1; 
+  background-color: #6f42c1;
   color: white;
   border: none;
   border-radius: 4px;
@@ -267,7 +267,7 @@
   padding: 10px;
   border-radius: 15px;
   background-color: #f8f9fa;
-  justify-items: center; 
+  justify-items: center;
 }
 
 .recent-viewed-title {
@@ -276,7 +276,7 @@
 }
 
 .recent-viewed-items {
-  
+
 }
 
 .recent-item-placeholder {
@@ -298,4 +298,26 @@
 
 .recent-viewed-more-button:hover {
   text-decoration: underline;
+}
+
+/* 로그인 후 헤더 css*/
+.loginHeader {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+  font-size: 1rem;
+}
+
+.home {
+  width: 30%;
+  display: block;
+  justify-content: flex-start;
+}
+
+.logoButton {
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  display: inline-flex;
 }
