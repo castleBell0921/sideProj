@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 import LoginModal from '../user/login/LoginModalContainer';
+import '../../styles/common.css'; // 스타일 시트 임포트
 
 
 
@@ -66,6 +67,11 @@ const Header = () => {
     }
   };
 
+  const handleHome = () => {
+    console.log('click!');
+    navigate('/');
+  }
+
   const openLoginModal = () => {
     setIsLoginModalOpen(true);
   };
@@ -77,11 +83,18 @@ const Header = () => {
   return (
       <div className="signIn">
       <span>
-        <h1>logo</h1>
+        <button className="logoButton" onClick={handleHome}>
+          <img src="/image/딜온로고.png" alt="메인페이지이동" className="home"/>
+        </button>
       </span>
         <span className="join">
         {isLoggedIn ? (
-            <p onClick={handleLogout}>로그아웃</p>
+            <div className="loginHeader">
+              <p>채팅하기</p>
+              <p>판매하기</p>
+              <p>마이페이지</p>
+              <p onClick={handleLogout}>로그아웃</p>
+            </div>
         ) : (
             <p onClick={openLoginModal}>로그인 | 회원가입</p>
         )}
