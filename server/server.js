@@ -7,6 +7,7 @@ const userRoutes = require('./users/userRoutes'); // User 라우터 불러오기
 const auth = require('./auth/authRoutes');
 const kakaoRoutes = require('./social/kakao/kakaoRoutes'); // 카카오 라우터 import
 const googleRoutes = require('./social/google/googleRoutes'); // Google 라우터 임포트
+const loc = require('./location/locationRoutes');
 
 const app = express();
 const port = 4000;
@@ -37,6 +38,7 @@ app.use(session({
 
 
 app.use('/api', userRoutes);
+app.use('/loc', loc);
 app.use('/auth', auth);
 app.use('/social/kakao', kakaoRoutes); // 카카오 관련 라우터를 '/social/kakao' 경로에 연결
 app.use('/social/google', googleRoutes);
